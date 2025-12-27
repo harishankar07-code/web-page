@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+body{
+    background: linear-gradient(135deg, #7da2bd, #ffffff);
+}
+
+
+
+.courses-section{
+    padding:40px 15px;
+    text-align:center;
+}
+
+.courses-section h1{
+    margin-bottom:30px;
+    font-size:32px;
+}
+
+
+.course-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap:25px;
+}
+
+
+.course-card{
+    background:#fff;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    transition:0.3s;
+    text-align:left;
+}
+
+.course-card:hover{
+    transform:translateY(-6px);
+}
+
+
+.course-card img{
+    width:100%;
+    height:auto;      
+    display:block;
+    border-radius:10px;
+}
+
+
+
+
+.course-card h2{
+    margin:15px 0 8px;
+    font-size:20px;
+}
+
+.course-card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.5;
+    margin-bottom:10px;
+}
+
+.duration{
+    display:block;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+
+.course-card button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#1976d2;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:15px;
+   
+}
+
+.course-card button:hover{
+    background:#0d47a1;
+}
+
+@media (max-width: 600px){
+    .course-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px){
+    .course-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+     <section class="courses-section">
+        <h1>Our Courses</h1>
+
+        <div class="course-container">
+
+            
+            <div class="course-card">
+                <img src="WEB.jpg" alt="Web Development">
+                <h2>Web Development</h2>
+                <p>Learn HTML, CSS and JavaScript to create modern and professional websites.</p>
+                <H4 class="duration">Duration: 3 Months</H4>
+                <button>View Details</button>
+            </div>
+
+            
+            <div class="course-card">
+                <img src="AC.jpg" alt="Tally Accounting">
+                <h2>Tally & Accounting</h2>
+                <p>Master accounting concepts with practical Tally software training.</p>
+                <H4 class="duration">Duration: 3 Months</H4>
+                <button>View Details</button>
+            </div>
+
+            
+            <div class="course-card">
+                <img src="EX.jpg" alt="Excel">
+                <h2>Excel & Advanced Excel</h2>
+                <p>Learn Excel formulas, charts, pivot tables and advanced tools and using AI.</p>
+                <H4 class="duration">Duration: 2 Months</H4>
+                <button>View Details</button>
+            </div>
+
+            
+            <div class="course-card">
+                <img src="GP.jpg" alt="Graphic Design">
+                <h2>Graphic Design</h2>
+                <p>Design logos, posters and banners using professional tools like Adobe Photoshop, Illustrator.</p>
+                <H4 class="duration">Duration: 4 Months</H4>
+                <button>View Details</button>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
